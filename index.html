@@ -21,8 +21,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="nav navbar-nav ">
-        <li class="nav-item active">
+      <ul class="nav navbar-nav smooth-scroll">
+        <li class="nav-item">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -44,7 +44,7 @@
     </div>
   </nav>
 
-  <div id="home" class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
       <div id="backgroundCarousal" class="carousel slide carousel-fade" data-ride="carousel">
         <div id="backgroundInner" class="carousel-inner">
@@ -267,12 +267,12 @@
       <div class="container">
         <div class="row">
           <div class="col rsv-col">
-            <form class="registration-form">
+            <form class="registration-form" action="https://formspree.io/xgenwlzk" method="POST" target="_blank">
               <div class="form-group">
-                <input type="text" class="form-control lead" placeholder="Full name">
+                <input type="text" class="form-control lead" placeholder="Full name" name="Full name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email address">
+                <input type="email" class="form-control" placeholder="Email address" name="Email address">
               </div>
               <div class="form-group">
                 <select name="day" class="form-control">
@@ -317,7 +317,7 @@
               </div>
               <div class="checkbox">
                 <label class="ckbox">
-                  <input type="checkbox"> Send me notifications
+                  <input type="checkbox" action="https://formspree.io/mwkrennq" method="POST"> Send me notifications
                 </label>
               </div>
               <button type="submit" class="btn btn-default">Submit</button>
@@ -398,6 +398,7 @@
   </div>
 
 
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -409,6 +410,12 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"
     integrity="sha256-yDarFEUo87Z0i7SaC6b70xGAKCghhWYAZ/3p+89o4lE=" crossorigin="anonymous"></script>
+
+  <script>
+    $('.navbar-nav .nav-link').bind('click', function (event) {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
 </body>
 
 </html>
