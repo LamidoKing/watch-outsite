@@ -211,6 +211,10 @@ p {
   margin-top: -2px;
 }
 
+.subcr-sumbit-bt {
+  margin-top: 5px;
+}
+
 .ft-bt-link {
   margin: 0px 10px;
 }
@@ -220,6 +224,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .social-buttons a {
@@ -278,8 +283,3 @@ p {
     transform: scale(1.5, 1.5);
   }
 }
-
-/* .carousel-inner .carousel-item  {
-      -webkit-animation: zoom 20s;
-      animation: zoom 20s;
-    } */
