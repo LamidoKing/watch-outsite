@@ -90,7 +90,8 @@ a.carousel-control-prev:hover {
   );
 }
 
-.carousel-caption {
+.carousel-caption,
+.card-title {
   background-color: rgba(1, 57, 95, 1);
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(1, 57, 95, 0));
 }
@@ -131,8 +132,10 @@ a.carousel-control-prev:hover {
   color: #fff;
 }
 
-element.style {
+.card-title {
+  color: #fff;
 }
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
